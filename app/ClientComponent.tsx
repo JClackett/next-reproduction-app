@@ -20,11 +20,18 @@ export function ClientComponent (props: Props) {
 					alert(result)
 			}}>Fire action</button>
 
+			<a
+			download
+			style={{padding: 10}}
+			// prefetch={false}
+				href="/generate.txt?title=Hello&description=World"
+			>Generate txt with a tag</a>
 			<Link
+			download
 			style={{padding: 10}}
 			prefetch={false}
 				href="/generate.txt?title=Hello&description=World"
-			>Generate txt</Link>
+			>Generate txt with Next.js Link</Link>
 		</div>
 	)
 }
