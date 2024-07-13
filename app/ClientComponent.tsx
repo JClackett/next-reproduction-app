@@ -1,6 +1,7 @@
 "use client";
 import * as React from "react"
 import { testAction } from "./action";
+import Link from "next/link";
 
 interface Props {
 	name: string
@@ -18,6 +19,12 @@ export function ClientComponent (props: Props) {
 					const result = await testAction()
 					alert(result)
 			}}>Fire action</button>
+
+			<Link
+			style={{padding: 10}}
+			prefetch={false}
+				href="/generate?title=Hello&description=World"
+			>Generate txt</Link>
 		</div>
 	)
 }
