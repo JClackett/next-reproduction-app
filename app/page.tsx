@@ -2,6 +2,9 @@ import * as React from "react"
 import { ClientComponent } from "./ClientComponent";
 import Link from "next/link";
 
+
+export const dynamic = "force-dynamic"
+
 export default function Home() {
   return <div>
     <h1>Server Component</h1>
