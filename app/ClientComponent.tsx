@@ -23,7 +23,7 @@ export function ClientComponent (props: Props) {
 			<Link
 			style={{padding: 10}}
 			prefetch={false}
-				href="/generate?title=Hello&description=World"
+				href="/generate.txt?title=Hello&description=World"
 			>Generate txt</Link>
 		</div>
 	)

@@ -15,12 +15,12 @@ export async function GET(request: NextRequest) {
     const buffer = `${result.title} ${result.description}`
     return new NextResponse(buffer, {
       headers: {
-        "Content-Type": "application/pdf",
+        "Content-Type": "application/txt",
         "Content-Disposition": `attachment; filename="${result.title}.txt"`,
       },
     })
   } catch (e) {
     console.log(e)
-    return new Response("Error generating pdf", { status: 500 })
+    return new Response("Error generating txt", { status: 500 })
   }
 }
